@@ -1,0 +1,323 @@
+/* styles.css */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    /* background-color: #00000080; */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff80ab;
+    padding: 1rem;
+}
+
+header nav ul li a,
+header nav ul li button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+header nav ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header nav ul li a:hover,
+header nav ul li button:hover {
+    background-color: #ff4081;
+}
+
+main .section {
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Animation keyframes for a pulsating effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Applying the pulsating animation on hover */
+.profile-image:hover {
+    animation: pulse 1s infinite;
+}
+
+.card,
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: left;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.skill-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #ff80ab;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+form button:hover {
+    background-color: #ff4081;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0.5rem;
+    color: #ff80ab;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    color: #ff4081;
+}
+
+footer {
+    background-color: #ff80ab;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+body.dark-mode {
+    /* background-color: #333; */
+    background-color: #00000080;
+    color: #f5f5f5;
+}
+
+body.dark-mode header nav ul {
+    background-color: #6200ea;
+}
+
+body.dark-mode .card,
+body.dark-mode .project-card,
+body.dark-mode .skill-card,
+body.dark-mode form input,
+body.dark-mode form textarea,
+body.dark-mode form button {
+    background-color: #444;
+    color: #f5f5f5;
+    border: none;
+}
+
+body.dark-mode form button {
+    background-color: #bb86fc;
+}
+
+body.dark-mode form button:hover {
+    background-color: #3700b3;
+}
+
+/* --------------------- */
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff80ab;
+    /* background: rgba(0, 0, 0, 0.5); */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+}
+
+header nav ul li a,
+header nav ul li button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+header nav ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header nav ul li a:hover,
+header nav ul li button:hover {
+    background-color: #524449;
+}
+
+main .section {
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+#home {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 3rem 1rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.animated-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* background-image: linear-gradient(90deg, #ff80ab, #ff4081, #ff80ab); */
+    background-image: linear-gradient(90deg, #bb86fc, #6200ea, #bb86fc);
+
+}
+
+.animated-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ff80ab;
+    width: 0;
+    overflow: hidden;
+    border-right: 2px solid #ff80ab;
+    animation: typing 4s steps(30, end) 1s 1 normal both, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #ff80ab;
+    }
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+body.dark-mode header nav ul {
+    background-color: #ea2300;
+}
+
+body.dark-mode #home {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .animated-text {
+    background-image: linear-gradient(90deg, #bb86fc, #6200ea, #bb86fc);
+}
+
+body.dark-mode .animated-text::after {
+    color: #bb86fc;
+    border-color: #bb86fc;
+}

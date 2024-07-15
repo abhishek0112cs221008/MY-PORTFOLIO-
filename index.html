@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Patel - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about"><i class="fa-regular fa-address-card"></i></a></li>
+                <li><a href="#education"><i class="fa-solid fa-school"></i></a></li>
+                <li><a href="#skills"><i class="fa-solid fa-bars-progress"></i></a></li>
+                <li><a href="#projects"><i class="fa-solid fa-tarp"></i></a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone"></i></a></li>
+                <li><button id="dark-mode-toggle"><i class="fa-solid fa-sun"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <h1 class="animated-text">Hello </h1>
+                <p class="animated-text">I'm Abhishek Patel</p> <br>
+                <img src="IMG_abhishek.jpg" alt="Abhishek Patel" class="profile-image">
+            </div>
+        </section>
+
+
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="card">
+                    <h3>B.Tech in Computer Science & Engineering</h3>
+                    <p>Bansal Institute of Science and Technology, Bhopal</p>
+                    <p>CGPA: 8.40 (2022 - Present)</p>
+                </div>
+                <div class="card">
+                    <h3>Class XII</h3>
+                    <p>Adarsh Narmada Higher Secondary School, Gangeo</p>
+                    <p>Percentage: 91% (2022)</p>
+                </div>
+                <div class="card">
+                    <h3>Class X</h3>
+                    <p>Adarsh Narmada Higher Secondary School, Gangeo</p>
+                    <p>Percentage: 94.79% (2020)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">Java</div>
+                    <div class="skill-card">C</div>
+                    <div class="skill-card">C++</div>
+                    <div class="skill-card">Python</div>
+                    <div class="skill-card">HTML</div>
+                    <div class="skill-card">CSS</div>
+                    <div class="skill-card">JavaScript</div>
+                    <div class="skill-card">PHP</div>
+                    <div class="skill-card">MySQL</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-card">
+                    <h3>Logical Quiz Game</h3>
+                    <p>A web-based quiz game that challenges users with logical questions and puzzles.</p>
+                    <p>Technologies used: HTML, CSS, JavaScript</p>
+                </div>
+                <div class="project-card">
+                    <h3>College Event Management System</h3>
+                    <p>A system to manage college events efficiently.</p>
+                    <p>Technologies used: HTML, CSS, PHP, MySQL</p>
+                </div>
+                <div class="project-card">
+                    <h3>Tic-Tac-Toe Game</h3>
+                    <p>A classic Tic-Tac-Toe game developed in C++.</p>
+                    <p>Technology used: C++</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I'm Abhishek Patel, a Computer Science and Engineering student at Bansal Institute of Science
+                    and Technology, Bhopal. I have a passion for coding and enjoy working on projects that challenge my
+                    skills and creativity. I'm proficient in Java, C, C++, Python, and web technologies like HTML, CSS,
+                    and JavaScript.</p>
+                <p>My career objective is to achieve high career growth in a multinational organization through
+                    continuous learning and applying my skills to solve real-world problems.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/abhishek-patel-93201426a" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/shradha-khapra" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+        <p>&copy; 2024 Abhishek Patel</p>
+    </footer>
+</body>
+
+</html>
