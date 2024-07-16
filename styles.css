@@ -1,4 +1,3 @@
-/* styles.css */
 * {
     margin: 0%;
     padding: 0%;
@@ -365,7 +364,6 @@ h2 {
 
 h4,
 h3,
-p,
 label {
 
     background-image: linear-gradient(to right,
@@ -390,8 +388,10 @@ label {
     box-shadow: 0px 2px 2px #645500;
 }
 
-.skill-card:hover, .project-card:hover, .card:hover{
-    box-shadow: 0px 2px 2px #c2a502;
+.skill-card:hover,
+.project-card:hover,
+.card:hover {
+    box-shadow: 0px 2px 2px #ffd900;
     /* cursor: pointer; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -400,6 +400,7 @@ button {
     background: linear-gradient(to bottom, #ebd197 0%, #b48811 50%, #a2790d 51%, #bb9b49 100%);
 
 }
+
 
 a {
     font-size: 20px;
