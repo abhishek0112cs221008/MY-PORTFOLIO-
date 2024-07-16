@@ -401,7 +401,6 @@ button {
 
 }
 
-span,
 a {
     font-size: 20px;
     font-weight: bold;
@@ -417,4 +416,88 @@ a {
 footer {
     background-color: #000000e7;
     box-shadow: 2px 0px 0px 2px #a58d00;
+}
+/* --------------------------- */
+span ,p{
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: #ccc;
+    background: linear-gradient(135deg, #f0f0f0, #dcdcdc, #b0b0b0, #e0e0e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+h2::before {
+     content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.4) 50%, transparent 100%);
+            animation: shine 4s infinite;
+}
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    20% {
+        left: 1%;
+    }
+    80% {
+        left: 1%;
+    }
+}
+
+@keyframes textColorShift {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+@keyframes textShine {
+    0% {
+        text-shadow: 0 1px 0 #bbb,
+                     0 2px 0 #bbb,
+                     0 3px 0 #aaa,
+                     0 4px 0 #aaa,
+                     0 5px 0 #999,
+                     0 6px 1px rgba(0,0,0,0.1),
+                     0 0 5px rgba(0,0,0,0.1),
+                     0 1px 3px rgba(0,0,0,0.3),
+                     0 3px 5px rgba(0,0,0,0.2),
+                     0 5px 10px rgba(0,0,0,0.25),
+                     0 10px 10px rgba(0,0,0,0.2),
+                     0 20px 20px rgba(0,0,0,0.15);
+    }
+    50% {
+        text-shadow: 0 1px 0 #fff,
+                     0 2px 0 #fff,
+                     0 3px 0 #eee,
+                     0 4px 0 #eee,
+                     0 5px 0 #ddd,
+                     0 6px 1px rgba(255,255,255,0.1),
+                     0 0 5px rgba(255,255,255,0.1),
+                     0 1px 3px rgba(255,255,255,0.3),
+                     0 3px 5px rgba(255,255,255,0.2),
+                     0 5px 10px rgba(255,255,255,0.25),
+                     0 10px 10px rgba(255,255,255,0.2),
+                     0 20px 20px rgba(255,255,255,0.15);
+    }
+    100% {
+        text-shadow: 0 1px 0 #bbb,
+                     0 2px 0 #bbb,
+                     0 3px 0 #aaa,
+                     0 4px 0 #aaa,
+                     0 5px 0 #999,
+                     0 6px 1px rgba(0,0,0,0.1),
+                     0 0 5px rgba(0,0,0,0.1),
+                     0 1px 3px rgba(0,0,0,0.3),
+                     0 3px 5px rgba(0,0,0,0.2),
+                     0 5px 10px rgba(0,0,0,0.25),
+                     0 10px 10px rgba(0,0,0,0.2),
+                     0 20px 20px rgba(0,0,0,0.15);
+    }
 }
