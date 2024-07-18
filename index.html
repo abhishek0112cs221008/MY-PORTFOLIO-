@@ -11,11 +11,34 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="Screenshot 2024-07-15 190845.png">
+    <link rel="stylesheet" href="loadingEffect.css">
 </head>
+<script>
+    // app.js
+    document.addEventListener("DOMContentLoaded", function () {
+        // Simulate a delay for demonstration purposes (remove in production)
+        setTimeout(function () {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }, 3000); // Change the timeout duration as needed
+    });
+
+</script>
 
 <body>
-    <!-- <header>
-        <nav>
+
+
+    <div id="loading" class="loading-overlay">
+        <div class="loader">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="bar bar4"></div>
+            <div class="bar bar5"></div>
+        </div>
+    </div>
+    <header>
+        <!-- <nav>
             <ul>
                 <li><a href="#index.html"><i class="fa-solid fa-house"></i></a></li>
                 <li><a href="#about"><i class="fa-regular fa-address-card"></i></a></li>
@@ -25,16 +48,24 @@
                 <li><a href="#contact"><i class="fa-solid fa-phone"></i></a></li>
                 <li><button id="dark-mode-toggle"><i class="fa-solid fa-sun"></i></button></li>
             </ul>
-        </nav>
-    </header> -->
-    <main>
+        </nav> -->
         <section id="home" class="section">
+            
             <div class="container">
                 <h1 class="animated-text">Hello'</h1> <br>
                 <p class="animated-text">I'm Abhishek Patel</p> <br>
                 <img src="dihcuu.jpg" alt="Abhishek Patel" class="profile-image">
             </div>
         </section>
+    </header>
+    <main id="content">
+        <!-- <section id="home" class="section">
+            <div class="container">
+                <h1 class="animated-text">Hello'</h1> <br>
+                <p class="animated-text">I'm Abhishek Patel</p> <br>
+                <img src="/images/dihcuu.jpg" alt="Abhishek Patel" class="profile-image">
+            </div>
+        </section> -->
 
 
 
@@ -44,7 +75,7 @@
                 <div class="card">
                     <h3>B.Tech in Computer Science & Engineering</h3>
                     <p>Bansal Institute of Science and Technology, Bhopal</p>
-                    <p>CGPA: 8.40 (2022 - Present)</p>
+                    <p>CGPA: 8.40 </p>
                 </div>
                 <div class="card">
                     <h3>Class XII</h3>
@@ -149,19 +180,38 @@
     </main>
     <footer>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/abhishek-patel-93201426a" target="_blank"><i style="font-size: 35px;"
-                    class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/abhishek0112cs221008" target="_blank"><i style="font-size: 35px;"
-                    class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/i_am_abhipatel_/" target="_blank"><i style="font-size: 35px;"
-                    class="fa-brands fa-instagram"></i></a>
-            <a href="https://facebook.com" target="_blank"><i style="font-size: 35px;"
-                    class="fa-brands fa-facebook"></i></a>
-            <a href="https://x.com/abhi20patel" target="_blank"><i style="font-size: 35px;"
-                    class="fa-solid fa-x"></i></a>
+            <a href="https://www.linkedin.com/in/abhishek-patel-93201426a" target="_blank" class="linkedin-link">
+                <i style="font-size: 35px;" class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/abhishek0112cs221008" target="_blank" class="github-link">
+                <i style="font-size: 35px;" class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/i_am_abhipatel_/" target="_blank" class="instagram-link">
+                <i style="font-size: 35px;" class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="facebook-link">
+                <i style="font-size: 35px;" class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://x.com/abhi20patel" target="_blank" class="twitter-link">
+                <i style="font-size: 35px;" class="fa-solid fa-x"></i>
+            </a>
         </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+                if (isMobile) {
+                    document.querySelector('.linkedin-link').href = 'linkedin://in/abhishek-patel-93201426a';
+                    document.querySelector('.instagram-link').href = 'instagram://user?username=i_am_abhipatel_';
+                    document.querySelector('.facebook-link').href = 'fb://profile/';
+                    document.querySelector('.twitter-link').href = 'twitter://user?screen_name=abhi20patel';
+                }
+            });
+
+        </script>
         <p>&copy; 2024 Abhishek Patel</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
