@@ -14,21 +14,35 @@
     <link rel="stylesheet" href="loadingEffect.css">
 </head>
 <script>
-    // app.js
-    document.addEventListener("DOMContentLoaded", function () {
-        // Simulate a delay for demonstration purposes (remove in production)
+    // // app.js
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     // Simulate a delay for demonstration purposes (remove in production)
+    //     setTimeout(function () {
+    //         document.getElementById('loading').style.display = 'none';
+    //         document.getElementById('content').style.display = 'block';
+    //     }, 3000); // Change the timeout duration as needed
+    // });
+    // const loader = document.querySelector('.loader');
+
+    // // Show loader
+    // loader.classList.add('show');
+
+    // // Hide loader
+    // loader.classList.remove('show');
+
+
+    window.addEventListener('load', function () {
+        const loaderContainer = document.querySelector('.loader-container');
         setTimeout(function () {
-            document.getElementById('loading').style.display = 'none';
-            document.getElementById('content').style.display = 'block';
-        }, 3000); // Change the timeout duration as needed
+            loaderContainer.style.display = 'none';
+        }, 1000); // Hide loader after 3 seconds
     });
+
 
 </script>
 
 <body>
-
-
-    <div id="loading" class="loading-overlay">
+    <!-- <div id="loading" class="loading-overlay">
         <div class="loader">
             <div class="bar bar1"></div>
             <div class="bar bar2"></div>
@@ -36,7 +50,13 @@
             <div class="bar bar4"></div>
             <div class="bar bar5"></div>
         </div>
+    </div> -->
+    <!-- <div class="loader"></div> -->
+    <div class="loader-container" style="flex-direction: column;">
+        <div  class="loader"></div>
+        <br><div style="font-size:x-large;">🔱</div>
     </div>
+
     <header>
         <!-- <nav>
             <ul>
@@ -50,11 +70,11 @@
             </ul>
         </nav> -->
         <section id="home" class="section">
-            
+
             <div class="container">
                 <h1 class="animated-text">Hello'</h1> <br>
                 <p class="animated-text">I'm Abhishek Patel</p> <br>
-                <img src="dihcuu.jpg" alt="Abhishek Patel" class="profile-image">
+                <img src="/images/WhatsApp Image 2024-08-30 at 10.02.19_5dd01989.jpg" alt="Abhishek Patel" class="profile-image">
             </div>
         </section>
     </header>
@@ -196,6 +216,7 @@
                 <i style="font-size: 35px;" class="fa-solid fa-x"></i>
             </a>
         </div>
+
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
