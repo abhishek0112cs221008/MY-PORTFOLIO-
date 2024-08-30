@@ -1,6 +1,8 @@
+/* styles.css */
 * {
     margin: 0%;
     padding: 0%;
+    /* background-color: #f5e4e1; */ /*light pinl color*/
 }
 
 body {
@@ -236,7 +238,7 @@ main .section {
 .profile-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 30px;
     margin-top: 1rem;
     border: 2px solid rgba(255, 255, 255, 0.8);
 }
@@ -246,7 +248,7 @@ main .section {
     backdrop-filter: blur(10px);
     padding: 3rem 1rem;
     border-radius: 15px;
-/*     border: 1px solid rgba(255, 255, 255, 0.2); */
+    /* border: 0px solid rgba(255, 255, 255, 0.2); */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
@@ -502,3 +504,4 @@ h2::before {
                      0 20px 20px rgba(0,0,0,0.15);
     }
 }
+
