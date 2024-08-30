@@ -1,9 +1,9 @@
-/* loding effect on page css */
+/* 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: rgba(0, 0, 0, 0.8);
-    /* Transparent black background */
+    // Transparent black background 
     color: white;
 }
 
@@ -66,7 +66,55 @@ body {
 
 #content {
     display: none;
-    /* Hide content initially */
     padding: 20px;
     text-align: center;
+} */
+
+
+/* .loader {
+
+    width: 120px;
+
+    height: 20px;
+
+    border-radius: 20px;
+
+    background:
+        repeating-linear-gradient(135deg, #f03355 0 10px, #ffa516 0 20px) 0/0% no-repeat,
+        repeating-linear-gradient(135deg, #ddd 0 10px, #eee 0 20px) 0/100%;
+    animation: l3 2s infinite;
 }
+@keyframes l3 {
+        100% {background-size:100%}
+} */
+
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: #f03355; */
+    background-image: linear-gradient(#232526,#414345,#b0bde3);
+    /* background-image: linear-gradient(#dae2f8,#f2709c,#ff9472,#859398); */
+    /* background: radial-gradient(shape size at position, white,blue,yellow,red,black); */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader {
+    width: 120px;
+    height: 20px;
+    border-radius: 20px;
+    background: repeating-linear-gradient(135deg, #f03355 0 10px, #ffa516 0 20px) 0/0% no-repeat, repeating-linear-gradient(135deg, #ddd 0 10px, #eee 0 20px) 0/100%;
+    animation: l3 2s infinite;
+  }
+  
+  @keyframes l3 {
+    100% {
+      background-size: 100%
+    }
+  }
